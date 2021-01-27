@@ -1,0 +1,50 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+body{
+
+    background: radial-gradient(circle, rgba(70,35,209,1) 0%, rgba(27,119,209,1) 100%, rgba(15,222,255,1) 100%);
+    
+}
+
+strong{
+    color:rgb(30, 78, 2);
+}
+
+em{
+    color:aqua;
+}
+
+.container{
+    width:96%;
+}
+
+.centrado{
+    margin:2% auto;
+}
+
+#principal{ 
+    color:white;
+    background:rgb(233, 119, 54);
+
+}
+
+input[type=checkbox] { 
+   
+    /* internet explorer */ -ms-transform: scale(1.8); 
+    /* firefox */ -moz-transform: scale(1.8);  
+    /* chrome,safari,android,ios */ -webkit-transform: scale(1.8);  
+    /* opera */ -o-transform: scale(1.8); 
+
+    /* internet explorer */ -ms-padding:60%; 
+    /* firefox */ -moz-padding:60%;  
+    /* chrome,safari,android,ios */ -webkit-padding:60%;  
+    /* opera */ -o-padding:60%; 
+       
+}

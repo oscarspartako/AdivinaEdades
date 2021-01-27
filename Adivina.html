@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/funciones.js"></script>
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="row" id="formulario">
+      <div class="col">
+        <h4 id="titulo" class="text-danger text-center mb-5">Bienvenido Al Adivina Edades</h4>
+
+        <p class="text-justify">Bienvenido, debe escribir su nombre para poder ingresar al <i
+            class="text-warning">Adivina Edades.</i>
+          Debe seleccionar todas las columnas <b class="text-dark">(A,B,C,D,E,F,G)</b> en donde aparesca el número de su
+          edad y después presionar el boton <b class="text-success">adivinar.</b><br /><em>* la edad a descubrir, debe
+            estar en el
+            rango de 1 a 127 años.</em>
+          </i>
+        </p><br />
+        <div class="form-group" id="entrada">
+          <label for="nombre" id="lblNombre">Nombre:</label>
+          <input type="text" class="form-control" placeholder="ingrese nombre" id="nombre">
+        </div>
+        <button type="button" id="ingresar" class="w-100  btn btn-success py-3">ingresar</button>
+      </div>
+    </div>
+    <div class="row justify-content-around pt-2 text-center" id="principal">
+      <div class="columnas h5 col-*-*" id="c1"></div>
+      <div class="columnas h5 col-*-*" id="c2"></div>
+      <div class="columnas h5 col-*-*" id="c3"></div>
+      <div class="columnas h5 col-*-*" id="c4"></div>
+      <div class="columnas h5 col-*-*" id="c5"></div>
+      <div class="columnas h5 col-*-*" id="c6"></div>
+      <div class="columnas h5 col-*-*" id="c7"></div>
+    </div>
+    <div class="row">
+      <button type="button" id="adivinar" class="btn btn-secondary w-100 mt-2 py-3">adivinar</button>
+    </div>
+    <div id="resultado" class="justify-content-center">
+      <img src="imagenes/mago.jpg" width="100%">
+      <p id="fraseresultado"></p>
+
+    </div>
+    <div id="error" class="justify-content-center">
+      <img src="imagenes/error.png" id="imgerror" width="80%"><br />
+      <p id="frase"></p>
+    </div>
+    <button type="button" id="volver" class="w-100  btn btn-info py-3">volver</button>
+    <button type="button" id="raiz" class="w-100  btn btn-info py-3">volver</button>
+  </div>
+
+</body>
+
+</html>
